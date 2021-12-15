@@ -13,8 +13,7 @@ export default class Tooltip{
 // move a tooltip com base em seus estilos de acordo com a posicao do mouse 
   onMouseMove(event) {
    this.tooltipBox.style.top = `${event.pageY + 20}px`;
-   console.log(innerWidth, event.pageX)
-   
+      
    if(event.pageX + 240 > window.innerWidth){
     this.tooltipBox.style.left = `${event.pageX - 190}px`;
    } 
