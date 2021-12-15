@@ -13,6 +13,7 @@ export default class TabNav {
     
     const direcao = this.tabContent[index].dataset.anime;
     this.tabContent[index].classList.add('ativo', direcao);
+    
   }
   
   //adiciona os eventos na tab 
@@ -23,11 +24,14 @@ export default class TabNav {
   }
 
   init(){
-    if (this.tabMenu.length && this.tabContent.length)
+    if (this.tabMenu.length && this.tabContent.length){
     //ativar primeiro item
     this.activeTab(0)
     this.addTabNavEvent();
+    }
+    return this;
   }
-
+ 
+  
  
 }
