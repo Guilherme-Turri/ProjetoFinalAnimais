@@ -14,7 +14,7 @@ export default class Accordion {
       item.addEventListener('click', () => this.toggleAccordion(item));
     });
   }
-//iniciar funcao
+////iniciar funcao
   init() {
     if(this.accordionList.length){
       //ativar primeiro item
@@ -22,6 +22,7 @@ export default class Accordion {
       this.addAccordionEvent();
 
     }
+    return this;
   }
 }
 
